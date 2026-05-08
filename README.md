@@ -1,7 +1,7 @@
 
 ProxyPool 爬虫代理IP池
 =======
-[![Build Status](https://travis-ci.org/jhao104/proxy_pool.svg?branch=master)](https://travis-ci.org/jhao104/proxy_pool)
+[![Comprehensive Tests](https://github.com/jhao104/proxy_pool/actions/workflows/comprehensive-test.yml/badge.svg?branch=master)](https://github.com/jhao104/proxy_pool/actions/workflows/comprehensive-test.yml)
 [![](https://img.shields.io/badge/Powered%20by-@j_hao104-green.svg)](http://www.spiderpy.cn/blog/)
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/jhao104/proxy_pool/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/jhao104/proxy_pool.svg)](https://github.com/jhao104/proxy_pool/graphs/contributors)
