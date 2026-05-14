@@ -3,3 +3,5 @@ docs/_build
 *.pyc
 *.log
 .tox
+/SPEC.md
+/.claude/settings.json
