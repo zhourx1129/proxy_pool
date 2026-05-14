@@ -170,6 +170,17 @@ class ProxyFetcher(object):
         except Exception as e:
             print(e)
 
+    @staticmethod
+    def freeProxy12():
+        """ 谷德代理 https://www.goodips.com/ """
+        url = "https://www.goodips.com/"
+        tree = WebRequest().get(url, verify=False).tree
+        for item in tree.xpath("//div[@class='table-list']"):
+            ip = "".join(item.xpath("./ul/li[1]/text()")).strip()
+            port = "".join(item.xpath("./ul/li[2]/text()")).strip()
+            if ip and port:
+                yield "%s:%s" % (ip, port)
+
     # @staticmethod
     # def wallProxy01():
     #     """
@@ -235,7 +246,7 @@ class ProxyFetcher(object):
 
 if __name__ == '__main__':
     p = ProxyFetcher()
-    for _ in p.freeProxy06():
+    for _ in p.freeProxy12():
         print(_)
 
 # http://nntime.com/proxy-list-01.htm
